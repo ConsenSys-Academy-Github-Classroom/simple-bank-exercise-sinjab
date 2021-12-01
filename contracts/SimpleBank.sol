@@ -50,6 +50,10 @@ contract SimpleBank {
       revert();
     }
 
+    receive() external payable {
+        // custom function code
+    }
+
     /// @notice Get balance
     /// @return The balance of the user
     function getBalance() public view returns (uint) {
